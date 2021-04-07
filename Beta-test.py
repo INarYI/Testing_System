@@ -310,4 +310,6 @@ if __name__ == '__main__':
     ex = Main()
     ex.show()
     sys.exit(app.exec_())
-print('exit')
+
+#print('exit')
+#Version 1.0
