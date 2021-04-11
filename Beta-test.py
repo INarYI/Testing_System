@@ -110,7 +110,7 @@ class Registration(QMainWindow):
         let = str(self.Letter.text()).upper()
         cl = str(c) + let
         all_logins = (cur.execute("""SELECT Login FROM Users""")).fetchall()
-        if uname != '' and usurname != '' and ulogin != '' and upassword != '':
+        if uname != '' and usurname != '' and ulogin != '' and upassword != '' and let != '':
             flag = True
             for i in range(len(all_logins)):
                 if "('" + str(ulogin) + "',)" == str(all_logins[i]):
